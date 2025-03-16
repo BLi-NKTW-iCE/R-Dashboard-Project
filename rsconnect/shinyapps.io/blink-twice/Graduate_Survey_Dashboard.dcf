@@ -1,0 +1,12 @@
+name: Graduate_Survey_Dashboard
+title: Graduate_Survey_Dashboard
+username: blink-twice
+account: blink-twice
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14257643
+bundleId: 9952196
+url: https://blink-twice.shinyapps.io/Graduate_Survey_Dashboard/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
