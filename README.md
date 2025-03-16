@@ -84,5 +84,6 @@ We save these plots to an RDS file to be used in our dashboard app.
 
 Alternatively you can run the app by opening an R file and running the following code (replace username, repo, and ref as needed):
 
-*library(shiny)
-runGitHub(repo = "R-Dashboard-Project", username = "BLi-NKTW-iCE", ref = "main")*
+*library(shiny)*
+
+*runGitHub(repo = "R-Dashboard-Project", username = "BLi-NKTW-iCE", ref = "main")*
