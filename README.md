@@ -7,14 +7,14 @@
 
 * Column Specification
 	* We have been given certain columns to work off of so we can select them using the statement:
-	* [graduate_df <- select(temp_df, Campus, StudyField, Branch, Role, EduLevel, ProgLang, Databases, Platform, WebFramework, Industry, AISearch, AITool, Employment)]
+	* 'graduate_df <- select(temp_df, Campus, StudyField, Branch, Role, EduLevel, ProgLang, Databases, Platform, WebFramework, Industry, AISearch, AITool, Employment)'
 * Missing Value Treatment
 	* Upon inspection we find no NULL values however there are blank values which is treated using: 
-		* [graduate_df[graduate_df == ''] <- NA]
+		* 'graduate_df[graduate_df == ''] <- NA'
 	* We then remove the NULL valued rows with:
-		* [graduate_df <- na.omit(graduate_df)]
+		* 'graduate_df <- na.omit(graduate_df)'
 	* We also find erroneous data in the Branch column hence we remove the row with:
-		* [graduate_df <- graduate_df[graduate_df$Branch != 15,]]
+		* 'graduate_df <- graduate_df[graduate_df$Branch != 15,]'
 * Standardize Categorical Columns
 	* We then treat values that should represent the same thing with the mutate function and recode the values to equal the same value
 	* We also find a column with extra data given where it is not needed which we treat by splitting the cell value and keeping the first item after the split
@@ -76,8 +76,8 @@ We save these plots to an RDS file to be used in our dashboard app.
 	* Ensure the repo is cloned properly and files are in the same directory/project.
 
 2. Install Required Packages:
-	* Ensure all packages used by the application is installed by running [install.packages(c("shiny", "shinydashboard", "shinythemes", "plotly", "ggplot2", "DT", "dplyr", "tidyverse", "readr", "rsconnect"))]
+	* Ensure all packages used by the application is installed by running 'install.packages(c("shiny", "shinydashboard", "shinythemes", "plotly", "ggplot2", "DT", "dplyr", "tidyverse", "readr", "rsconnect"))'
 
 3. Deploy To shinyapps.io
 	* Run this command in R to deploy the app:
-	* [rsconnect::deployApp('path/to/app ')]
+	* 'rsconnect::deployApp('path/to/app')'
